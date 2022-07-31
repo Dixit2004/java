@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+   <head>
+  
+   <style>
+		/*table header data*/
+		th{
+		background-color: #04AA6D;
+		color: white;
+		}
+		/*GSRTS heading data*/
+		.header {
+			background-color: #f1f1f1;
+			padding: 0px;
+			text-align: center;
+			color: white;
+			text-shadow: 1px 1px 7px black, 0 0 30px blue, 0 0 15px darkblue;
+			position: -webkit-sticky;
+			position: sticky;
+			top: 0;
+			border: 2px solid none;
+			}
+			/*first column data*/
+		td.b{
+		counter-reset:section
+		color: black;
+		background: rgb(60, 179, 113,0.2);
+		padding-right: 1px;
+		margin-right: 1px;
+		border: 0.5px solid black;
+		font-size: 15px
+		counter-reset: section;
+		}
+		/*numbering*/
+		td.b::before {
+		counter-increment:section;
+		content: " " counter(section) ":";
+		}
+		/*second table data*/
+		td.c{
+		background:rgb(60, 179, 113,0.2);
+		padding: 0px;
+		margin: auto;
+		border: outset;
+		}
+		/*input effect*/
+		input:focus,textarea:focus,select:focus{
+		background-color: #eee;
+		}
+		/*input button background effect*/
+		.input{
+		color: green;
+		background: rgb(60, 179, 113,0.2);
+		}
+		/*selection effect*/
+		::selection{
+			color: white;
+			background: green;
+		}
+		/*input effect*/
+		input[type=text] , input[type=number],textarea[type=text] ,input[type=radio],input[type=file]{
+			box-sizing: border-box;
+			border: 1px solid black;
+			}
+			/*input button color*/
+			input[type=submit],input[type=reset]
+			{
+			
+			background-color: gray;
+			border: none;
+			color: white;
+			text-decoration: none;
+			}
+		tr:nth-child(even){background-color: #bbb;}
+		tr:hover {background-color: #ddd;}
+		
+		
+</style>
+		
+      <title>GSRTS bus pass form</title>
+   </head>
+   <body bgcolor="lavender">
+   <div class="header">
+   <h1>GSRTS</h1>
+      </div>
+	  <form>
+	  <div style="overflow-x: auto;">
+         <table style=margin-right:auto; align="center"  border="1" bgcolor="white" width="33%" height="50%">
+         
+			<th width=-35%>text</th>
+			<th width=35%>text</th>
+			<tr>
+			<td class="b" align="right">upload your images here:</td>
+			<td class="c"><input name="image" type="file">
+			<input name="image" type="file">
+			</td>
+			</tr>
+			<tr>
+               <td class="b" align="right">
+                  section:
+				  
+               </td>
+               <td class="c" align="left"><input name="section" type="text"></td>
+            </tr>
+			<tr>
+			<td class="b" align="right">City:</td>
+			<td class="c">
+				<input name="city" type="text" >
+			</td>
+			</tr>
+            <tr>
+               <td class="b" align="right">students full name(surname first)</td>
+               <td class="c"><input name="name" type="text" textsize="30" maxlength="10"></td>
+            </tr>
+            <tr>
+               <td class="b" align="right">students permanent Address:</td>
+               <td class="c"><textarea type="text" name="permanent address" rows="2" cols="30" placeholder="write your adddress"> </textarea></td>
+            </tr>
+            <tr>
+               <td class="b" align="right">students temporary Address:</td>
+               <td class="c"><textarea type="text" name="temporary address" rows="2" cols="30" placeholder="write your adddress"> </textarea></td>
+            </tr>
+            <tr>
+               <td class="b" align="right">collage name</td>
+               <td class="c"><input name="collage name" type="text" textsize="30" maxlength="10"></td>
+            </tr>
+            <tr>
+               <td class="b" align="right">collage Address:</td>
+               <td class="c"><textarea type="text" name="collage address" rows="2" cols="30" placeholder="write your adddress"> </textarea></td>
+            </tr>
+            <tr>
+               <td class="b" align="right">student's department</td>
+               <td class="c">
+			   <select type="text">
+					<option value="IT" selected>Information Technology(IT)
+					<option value="EE">Electrical Engeneering(EE)
+					<option value="CE">Computer Engeneering(CE)
+					<option value="BM"> BioMedical(BM)
+					<option value="EC">Electronic communication(EC)
+					<option value="IC">Instumental Computer(IC)
+					<option value="CH">Chemical(CH)
+			   </select>
+            </tr>
+			<tr>
+			<td class="b" align="right">Gender:</td>
+				<td class="c">
+					<input type="radio" name="gen" checked>Male
+					<input type="radio" name="gen">Female
+				</td>
+			</tr>
+            
+            <tr>
+               <td class="b" align="right">student's enrollment</td>
+               <td class="c"><input name="enrollment" type="number" maxlength="10" placeholder="206230316222"></td>
+            </tr>
+            <tr>
+               <td class="b" align="right">students date of birth</td>
+               <td class="c"><input name="DOB" type="date" textsize="30" maxlength="10"></td>
+            </tr>
+            <tr>
+               <td class="b" align="right">from which bus stand</td>
+               <td class="c"><input name="from" type="text" textsize="30" maxlength="10" placeholder="ex=Krishnanagar"></td>
+            </tr>
+            <tr>
+               <td class="b" align="right">to which bus stand</td>
+               <td class="c"><input name="to" type="text" textsize="30" maxlength="10" placeholder="ex=GH6"></td>
+            </tr>
+            <tr>
+               <td class="b" align="right">distance from your home to collage </td>
+               <td class="c"><input name="distance" type="number" textsize="30" maxlength="10" placeholder="in KM's"></td>
+            </tr>
+            <tr>
+				<td class="b" align="right">upload your signature here</td>
+				<td class="c"><input name="image" type="file">	
+			</td>
+			</tr>
+			<tr>
+				<td class="b" align="right">upload your father's signature here</td>
+				<td class="c"><input name="image" type="file">	
+			</td>
+			</tr>
+			<tr>
+				<td class="b" align="right">upload your fee reciept here</td>
+				<td class="c"><input name="image" type="file">	
+			</td><tr>
+				<td class="b" align="right">upload your adhaar card here</td>
+				<td class="c"><input name="image" type="file">	
+			</td>
+			<tr>
+               <td class="input" align="right"><input style="cursor:pointer" type="submit" value="submit"></td>
+               <td class="input" align="left"><input style="cursor:pointer" type="reset" value="Clear Data"></td>
+            </tr>
+			
+         </table>
+		 </div>
+      </form>
+   </body>
+</html>

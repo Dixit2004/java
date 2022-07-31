@@ -1,0 +1,25 @@
+table, td, th
+{border:1px solid green;
+}
+td
+{
+text-align:center;
+}
+th
+{
+background-color:green;
+color:white;
+}
+
+h1
+{
+text-shadow: 5px 5px 5px #FF0000;text-align:center;
+}
+p
+{
+outline-style:groove;
+outline-color:red;
+font-family:"Times New Roman",Georgia,Serif;
+text-align:center;
+font-weight:bold;
+}
